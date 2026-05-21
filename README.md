@@ -88,7 +88,7 @@ pip install requests beautifulsoup4 phonenumbers pysocks
 
 ### 3. Instalación Global (Opcional - Recomendada)
 
-Para poder ejecutar `enum_phone` desde cualquier parte de tu sistema sin tener que activar manualmente el entorno virtual, puedes crear un *wrapper* en tus binarios locales:
+Para poder ejecutar la herramienta desde cualquier parte de tu sistema sin tener que activar manualmente el entorno virtual, puedes crear un *wrapper* en tus binarios locales:
 
 ```bash
 chmod +x enum_phone.py
@@ -112,7 +112,7 @@ chmod +x ~/.local/bin/enum_phone
 ## 📖 Uso y Sintaxis
 
 ```text
-Uso: enum_phone.py [-h] (-t TARGET | -l LIST) [-o OUTPUT]
+Uso: python3 enum_phone.py [-h] (-t TARGET | -l LIST) [-o OUTPUT]
 
 Opciones:
   -h, --help            Muestra este mensaje de ayuda y sale.
@@ -126,24 +126,26 @@ Opciones:
 
 ### Ejemplos Prácticos
 
+Asegúrate de tener el entorno virtual activado (`source .venv/bin/activate`) antes de ejecutar estos comandos.
+
 **1. Análisis de un objetivo único:**
 
 ```bash
-enum_phone -t +34613814500
+python3 enum_phone.py -t +34613814500
 
 ```
 
 **2. Escaneo masivo desde un archivo:**
 
 ```bash
-enum_phone -l targets.txt
+python3 enum_phone.py -l targets.txt
 
 ```
 
 **3. Escaneo masivo con exportación para pipelines de inteligencia:**
 
 ```bash
-enum_phone -l targets.txt -o inteligencia.json
+python3 enum_phone.py -l targets.txt -o inteligencia.json
 
 ```
 

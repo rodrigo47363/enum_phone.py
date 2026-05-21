@@ -163,7 +163,3 @@ cat inteligencia.json | jq -r '.[] | select(.line_type == "VoIP (Virtual/Burner)
 ---
 
 *Desarrollado por **rodrigo47363** - Ciberseguridad & Red Team*
-
-```
-
-```
